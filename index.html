@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana Khalid Al-Harbi - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-live="polite" aria-label="Initializing system">
+        <div class="loading-card">
+            <div class="loading-title">Initializing System<span class="loading-dots"></span></div>
+            <div class="loading-subtitle">Loading modules, warming cache, syncing UI…</div>
+            <div class="loading-bar">
+                <div class="loading-bar-fill" id="loading-bar-fill"></div>
+            </div>
+            <div class="loading-hint">&gt; Press nothing. Just watch it boot.</div>
+        </div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <!-- Language Switcher -->
+   
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Rana Khalid Al-Harbi
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hud-shell">
+                    <div class="hud-topbar">
+                        <div class="hud-topbar-left">
+                            <span class="hud-dot hud-dot-red"></span>
+                            <span class="hud-dot hud-dot-yellow"></span>
+                            <span class="hud-dot hud-dot-green"></span>
+                            <span class="hud-title">RANA.SYSTEM — DEVOPS PORTFOLIO</span>
+                        </div>
+                        <div class="hud-topbar-right">
+                            <span class="hud-kv"><span class="hud-k">STATUS:</span> <span class="hud-v ok">ONLINE</span></span>
+                            <span class="hud-kv"><span class="hud-k">MODE:</span> <span class="hud-v">NEON</span></span>
+                        </div>
+                    </div>
+
+                    <div class="hud-grid">
+                        <aside class="hud-sidebar">
+                            <a class="hud-nav-item active" href="index.html"><i class="bi bi-terminal"></i> Home</a>
+                            <a class="hud-nav-item" href="about.html"><i class="bi bi-person-badge"></i> About</a>
+                            <a class="hud-nav-item" href="projects.html"><i class="bi bi-grid-3x3-gap"></i> Projects</a>
+                            <a class="hud-nav-item" href="contact.html"><i class="bi bi-send"></i> Contact</a>
+                            <div class="hud-sidebar-meta">
+                                <div class="hud-small">USER: <span class="ok">rana_dev</span></div>
+                                <div class="hud-small">ROLE: <span class="ok">devops</span></div>
+                                <div class="hud-small">ACCESS: <span class="ok">granted</span></div>
+                            </div>
+                        </aside>
+
+                        <section class="hud-main">
+                            <div class="hud-panel hud-boot">
+                                <div class="hud-mono hud-bootline" data-bootline="> initializing_devops_system.sh"></div>
+                                <div class="hud-mono hud-bootline" data-bootline="> loading modules..."></div>
+                                <div class="hud-mono hud-bootline" data-bootline="> welcome to my portfolio"></div>
+                            </div>
+
+                            <div class="hud-hero">
+                                <h1 class="hero-title hero-title-typewriter" data-typewriter-text="RANA ALHARBI" aria-label="RANA ALHARBI"></h1>
+                                <div class="hud-role">DEVOPS ENGINEER // AUTOMATION ENTHUSIAST // PROBLEM SOLVER</div>
+                                <p class="hero-subtitle">I build, automate, and optimize systems that power the future. Always shipping. Always improving.</p>
+                                <div class="hud-actions">
+                                    <a href="projects.html" class="btn btn-primary">VIEW_PROJECTS.EXE</a>
+                                    <a href="about.html" class="btn btn-outline-primary">ABOUT_ME</a>
+                                    <a href="static/25�� رنا خالد الحربي.pdf�.pdf" download class="btn btn-outline-primary">
+                                        <i class="bi bi-file-earmark-arrow-down me-2"></i>DOWNLOAD_CV
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="hud-row">
+                                <div class="hud-panel hud-skillpanel">
+                                    <div class="hud-panel-title">SKILLS --LIST</div>
+                                    <div class="hud-skill">
+                                        <span>CI/CD</span>
+                                        <span class="hud-bar"><span class="hud-bar-fill" style="width: 88%"></span></span>
+                                        <span class="hud-pct">88%</span>
+                                    </div>
+                                    <div class="hud-skill">
+                                        <span>Docker</span>
+                                        <span class="hud-bar"><span class="hud-bar-fill" style="width: 90%"></span></span>
+                                        <span class="hud-pct">90%</span>
+                                    </div>
+                                    <div class="hud-skill">
+                                        <span>Kubernetes</span>
+                                        <span class="hud-bar"><span class="hud-bar-fill" style="width: 84%"></span></span>
+                                        <span class="hud-pct">84%</span>
+                                    </div>
+                                    <div class="hud-skill">
+                                        <span>Monitoring</span>
+                                        <span class="hud-bar"><span class="hud-bar-fill" style="width: 80%"></span></span>
+                                        <span class="hud-pct">80%</span>
+                                    </div>
+                                </div>
+
+                                <div class="hud-panel hud-projectpanel">
+                                    <div class="hud-panel-title">PROJECTS [3]</div>
+                                    <div class="hud-chipgrid">
+                                        <div class="hud-chip">
+                                            <div class="hud-chip-title">CI/CD PIPELINE</div>
+                                            <div class="hud-chip-sub">STATUS: <span class="ok">RUNNING</span></div>
+                                        </div>
+                                        <div class="hud-chip">
+                                            <div class="hud-chip-title">DOCKER DEPLOY</div>
+                                            <div class="hud-chip-sub">STATUS: <span class="ok">SUCCESS</span></div>
+                                        </div>
+                                        <div class="hud-chip">
+                                            <div class="hud-chip-title">MONITORING STACK</div>
+                                            <div class="hud-chip-sub">STATUS: <span class="ok">ACTIVE</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="hud-chip-actions">
+                                        <a href="projects.html" class="btn btn-outline-primary btn-sm">VIEW_ALL_PROJECTS.EXE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <aside class="hud-right">
+                            <div class="hud-panel hud-status">
+                                <div class="hud-panel-title">SYSTEM STATUS</div>
+                                <div class="hud-kvline"><span>UPTIME</span><span class="ok" id="hud-uptime">99.9%</span></div>
+                                <div class="hud-kvline"><span>DEPLOYMENTS</span><span class="ok" id="hud-deployments">ACTIVE</span></div>
+                                <div class="hud-kvline"><span>PIPELINES</span><span class="ok" id="hud-pipelines">RUNNING</span></div>
+                                <div class="hud-kvline"><span>ERRORS</span><span class="ok" id="hud-errors">0</span></div>
+                            </div>
+
+                            <div class="hud-panel hud-logs">
+                                <div class="hud-panel-title">SYSTEM_LOGS.TXT</div>
+                                <div id="hud-logs">
+                                    <div class="hud-log"><span class="err">[ERROR 404]</span> module_not_found</div>
+                                    <div class="hud-log">resource could not be located</div>
+                                    <div class="hud-log"><span class="warn">[WARN]</span> retry in progress...</div>
+                                    <div class="hud-log"><span class="ok">[OK]</span> fallback route restored</div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="text-white">Technologies and tools I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="bi bi-code-slash display-4"></i>
+                        <h5 class="mt-3 mb-3">Programming</h5>
+                        <p class="text-white">Python, Java, HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="bi bi-gear display-4"></i>
+                        <h5 class="mt-3 mb-3">Frameworks</h5>
+                        <p class="text-white">Django, Flask, Bootstrap</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="bi bi-robot display-4"></i>
+                        <h5 class="mt-3 mb-3">Machine Learning</h5>
+                            <p class="text-white">Scikit-learn, Pandas, Matplotlib</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="bi bi-tools display-4"></i>
+                        <h5 class="mt-3 mb-3">Tools</h5>
+                        <p class="text-white">Git, GitHub, VS Code, Jupyter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Status Panel -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">System Status</h2>
+                    <p class="text-white">A DevOps-style snapshot of what’s running</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card p-4">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="status-metric">
+                                        <div class="status-label">Uptime</div>
+                                        <div class="status-value">99.9%</div>
+                                        <div class="status-sub">Service health: OK</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="status-metric">
+                                        <div class="status-label">Deployments</div>
+                                        <div class="status-value">Active</div>
+                                        <div class="status-sub">Rolling updates enabled</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="status-metric">
+                                        <div class="status-label">Pipelines</div>
+                                        <div class="status-value">Running</div>
+                                        <div class="status-sub">CI/CD checks passing</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4" style="border-color: rgba(0,255,159,0.18);">
+
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="progress-line">
+                                        <div class="progress-title">Build</div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill progress-fill-green" style="width: 88%"></div>
+                                        </div>
+                                        <div class="progress-meta">88%</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="progress-line">
+                                        <div class="progress-title">Test</div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill progress-fill-blue" style="width: 76%"></div>
+                                        </div>
+                                        <div class="progress-meta">76%</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="progress-line">
+                                        <div class="progress-title">Deploy</div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill progress-fill-purple" style="width: 64%"></div>
+                                        </div>
+                                        <div class="progress-meta">64%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="terminal-mini mt-4">
+                                <div class="terminal-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="terminal-title">ops-terminal</span>
+                                </div>
+                                <div class="terminal-body">
+                                    <div><span class="t-prompt">rana@ops</span>:<span class="t-path">~/portfolio</span>$ <span class="t-cmd">status</span></div>
+                                    <div class="t-out">services: <span class="t-ok">healthy</span> · alerts: <span class="t-ok">0</span> · latency: <span class="t-ok">stable</span></div>
+                                    <div class="t-out">next: <span class="t-warn">monitoring</span> → <span class="t-ok">optimize</span> → <span class="t-ok">ship</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="text-white">Some of my recent work</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="flip-card" tabindex="0" role="button" aria-label="Open project: Secure Link" data-href="projects.html#project-secure-link">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="flip-front-title">SECURE LINK</div>
+                                <div class="flip-front-sub">HOVER TO OPEN</div>
+                                <div class="flip-front-icon"><i class="bi bi-shield-check"></i></div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="project-card project-card-back">
+                                    <div id="securelink-featured-carousel" class="carousel slide carousel-fade featured-project-carousel" data-bs-ride="carousel" data-bs-interval="3800" data-bs-wrap="true" data-bs-pause="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/WhatsAppImage2025-09-26at4.13.44PM.jpeg" class="d-block w-100" alt="Secure Link — interface" style="height: 240px; object-fit: cover;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/WhatsAppImage2025-09-26at4.13.50PM.jpeg" class="d-block w-100" alt="Secure Link — URL analysis" style="height: 240px; object-fit: cover;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta">
+                                        <h5 class="project-title">Secure Link</h5>
+                                        <p class="project-desc">A machine learning-powered website for detecting phishing links with 96.6% accuracy using Random Forest and SVM algorithms.</p>
+                                        <div class="mb-3">
+                                            <span class="badge bg-primary">Python</span>
+                                            <span class="badge bg-secondary">Django</span>
+                                            <span class="badge bg-info">ML</span>
+                                        </div>
+                                        <a href="projects.html#project-secure-link" class="btn btn-sm btn-outline-primary">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card" tabindex="0" role="button" aria-label="Open project: Government Support System" data-href="projects.html#project-government">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="flip-front-title">GOV SUPPORT</div>
+                                <div class="flip-front-sub">HOVER TO OPEN</div>
+                                <div class="flip-front-icon"><i class="bi bi-kanban"></i></div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="project-card project-card-back">
+                                    <div id="government-featured-carousel" class="carousel slide carousel-fade featured-project-carousel" data-bs-ride="carousel" data-bs-interval="4000" data-bs-wrap="true" data-bs-pause="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/gov-support-login.png" class="d-block w-100" alt="Government Support System — login screen" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/gov-support-employee-request.png" class="d-block w-100" alt="Government Support System — employee request screen" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/gov-support-technician-board.png" class="d-block w-100" alt="Government Support System — technician board" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/gov-support-supervisor-board.png" class="d-block w-100" alt="Government Support System — supervisor board" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta">
+                                        <h5 class="project-title">Government Support System</h5>
+                                        <p class="project-desc">A responsive technical support web app with role-based navigation (Admin/Technician/Employee), inline alerts, loading states, and in-page messaging.</p>
+                                        <div class="mb-3">
+                                            <span class="badge bg-primary">Node.js</span>
+                                            <span class="badge bg-secondary">Express</span>
+                                            <span class="badge bg-info">REST API</span>
+                                        </div>
+                                        <a href="projects.html#project-government" class="btn btn-sm btn-outline-primary">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card" tabindex="0" role="button" aria-label="Open project: Tabarru wa Irtaqi Platform" data-href="projects.html#project-tabarru">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="flip-front-title">TABARRU PLATFORM</div>
+                                <div class="flip-front-sub">HOVER TO OPEN</div>
+                                <div class="flip-front-icon"><i class="bi bi-box2-heart"></i></div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="project-card project-card-back">
+                                    <div id="tabarru-featured-carousel" class="carousel slide carousel-fade featured-project-carousel" data-bs-ride="carousel" data-bs-interval="4000" data-bs-wrap="true" data-bs-pause="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/tabarru-admin-dashboard.png" class="d-block w-100" alt="Tabarru — admin" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/tabarru-donor-items.png" class="d-block w-100" alt="Tabarru — donor items" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/tabarru-charity-dashboard.png" class="d-block w-100" alt="Tabarru — charity view" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta">
+                                        <h5 class="project-title">Tabarru' wa Irtaqi Platform</h5>
+                                        <p class="project-desc">منصة تبرع وارتق — a full-stack web app for donating clothes and furniture: donors, charities, beneficiaries, admin tools, filtering, and request workflows (academic project, MCOT).</p>
+                                        <div class="mb-3">
+                                            <span class="badge bg-primary">PHP</span>
+                                            <span class="badge bg-secondary">MySQL</span>
+                                            <span class="badge bg-success">Bootstrap</span>
+                                        </div>
+                                        <a href="projects.html#project-tabarru" class="btn btn-sm btn-outline-primary">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card" tabindex="0" role="button" aria-label="Open project: AI mind" data-href="projects.html#project-aimind">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="flip-front-title">AI MIND</div>
+                                <div class="flip-front-sub">HOVER TO OPEN</div>
+                                <div class="flip-front-icon"><i class="bi bi-cpu"></i></div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="project-card project-card-back">
+                                    <div id="aimind-featured-carousel" class="carousel slide carousel-fade featured-project-carousel" data-bs-ride="carousel" data-bs-interval="3600" data-bs-wrap="true" data-bs-pause="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/aimind-dashboard.png" class="d-block w-100" alt="AI mind — home" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/aimind-chat.png" class="d-block w-100" alt="AI mind — chat" style="height: 240px; object-fit: cover; object-position: top;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-meta">
+                                        <h5 class="project-title">AI mind</h5>
+                                        <p class="project-desc">Agentic RAG web assistant: LangGraph agent with Pinecone knowledge search and web lookup (Vue 3 + Express), optional LangSmith tracing.</p>
+                                        <div class="mb-3">
+                                            <span class="badge bg-primary">Vue 3</span>
+                                            <span class="badge bg-secondary">LangGraph</span>
+                                            <span class="badge bg-info">Pinecone</span>
+                                        </div>
+                                        <a href="projects.html#project-aimind" class="btn btn-sm btn-outline-primary">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="projects.html" class="btn btn-primary">View All Projects <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="text-white">My professional journey</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h5 class="card-title mb-1">Marketing Specialist</h5>
+                                        <p class="text-white mb-0">Imtiaz Taibah Company</p>
+                                    </div>
+                                    <span class="badge bg-secondary">2024 - 2025 (Oct - Jul)</span>
+                                </div>
+                                <p class="card-text">Contributed to campaign planning and preparation of promotional materials, working on basic marketing tasks.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h5 class="card-title mb-1">IT Intern</h5>
+                                        <p class="text-white mb-0">Ministry of Environment, Water and Agriculture</p>
+                                    </div>
+                                    <span class="badge bg-secondary">2025 (Jul - Aug)</span>
+                                </div>
+                                <p class="card-text">Internship in the IT department, focusing on technical support and networks.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h5 class="card-title mb-1">Field Researcher</h5>
+                                        <p class="text-white mb-0">General Authority for Statistics</p>
+                                    </div>
+                                    <span class="badge bg-secondary">2022 (Field Work)</span>
+                                </div>
+                                <p class="card-text">Participated in field surveys and data collection for national statistics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-hero section-padding text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="hero-title mb-4">Ready to work together?</h2>
+                        <p class="hero-subtitle mb-4">I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together.</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Rana Khalid Al-Harbi</h5>
+                    <p class="mb-0">Computer Science Graduate & Software Developer</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="mailto:lvrcil7@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                        <a href="tel:+966558413188" aria-label="Phone"><i class="bi bi-phone"></i></a>
+                        <a href="https://www.linkedin.com/in/rana-alharbi-640079238" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="static/25�� رنا خالد الحربي.pdf�.pdf" download target="_blank" rel="noopener noreferrer" title="Download CV" aria-label="Download CV">
+                            <i class="bi bi-file-earmark-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Rana Khalid Al-Harbi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript for animations -->
+    <script>
+        // Add smooth scrolling and fade-in animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add fade-in animation to elements when they come into view
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            document.querySelectorAll('.skill-card, .project-card, .card').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Ensure Government Support carousel always starts on Login slide
+            const resetGovCarouselToLogin = () => {
+                const gov = document.getElementById('government-featured-carousel');
+                if (gov && typeof bootstrap !== 'undefined') {
+                    const inst = bootstrap.Carousel.getOrCreateInstance(gov);
+                    inst.to(0);
+                    inst.cycle();
+                }
+            };
+            resetGovCarouselToLogin();
+            window.addEventListener('pageshow', resetGovCarouselToLogin);
+
+            // Cursor follower (desktop only)
+            const cursorDot = document.getElementById('cursor-dot');
+            const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (cursorDot && !prefersReduced) {
+                let rafId = null;
+                let x = 0, y = 0;
+                window.addEventListener('mousemove', (e) => {
+                    x = e.clientX;
+                    y = e.clientY;
+                    if (rafId) return;
+                    rafId = window.requestAnimationFrame(() => {
+                        cursorDot.style.transform = `translate(${x}px, ${y}px)`;
+                        rafId = null;
+                    });
+                });
+            } else if (cursorDot) {
+                cursorDot.style.display = 'none';
+            }
+
+            // Hero title typewriter (runs on first load)
+            const titleEls = document.querySelectorAll('.hero-title-typewriter');
+            titleEls.forEach((titleEl) => {
+                const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                const raw = titleEl.getAttribute('data-typewriter-text') || '';
+
+                if (reducedMotion || !raw) {
+                    titleEl.innerHTML = raw.replace(/\n/g, '<br>');
+                } else {
+                    titleEl.innerHTML = '';
+                    const caret = document.createElement('span');
+                    caret.className = 'typewriter-caret';
+                    caret.setAttribute('aria-hidden', 'true');
+                    titleEl.appendChild(caret);
+
+                    const chars = raw.split('');
+                    let i = 0;
+                    const speedMs = 55;
+
+                    const tick = () => {
+                        if (i >= chars.length) {
+                            caret.remove();
+                            return;
+                        }
+                        const ch = chars[i++];
+                        if (ch === '\n') {
+                            caret.insertAdjacentHTML('beforebegin', '<br>');
+                        } else {
+                            caret.insertAdjacentText('beforebegin', ch);
+                        }
+                        window.setTimeout(tick, speedMs);
+                    };
+
+                    window.setTimeout(tick, 250);
+                }
+            });
+
+            // Glitch pulse on hero title
+            if (titleEls.length && !prefersReduced) {
+                const pulse = () => {
+                    titleEls.forEach((el) => el.classList.add('glitching'));
+                    window.setTimeout(() => titleEls.forEach((el) => el.classList.remove('glitching')), 650);
+                    const next = 1800 + Math.random() * 2200;
+                    window.setTimeout(pulse, next);
+                };
+                window.setTimeout(pulse, 900);
+            }
+
+            // Boot lines typing (HUD)
+            const bootLines = Array.from(document.querySelectorAll('.hud-bootline[data-bootline]'));
+            if (bootLines.length) {
+                const typeLine = (el, text, startDelay) => {
+                    if (prefersReduced) {
+                        el.textContent = text;
+                        return;
+                    }
+                    el.textContent = '';
+                    let i = 0;
+                    const tick = () => {
+                        if (i >= text.length) return;
+                        el.textContent += text[i++];
+                        window.setTimeout(tick, 18 + Math.random() * 18);
+                    };
+                    window.setTimeout(tick, startDelay);
+                };
+                bootLines.forEach((el, idx) => typeLine(el, el.getAttribute('data-bootline') || '', 200 + idx * 220));
+            }
+
+            // Live-ish status numbers + logs (HUD)
+            const uptimeEl = document.getElementById('hud-uptime');
+            const pipelinesEl = document.getElementById('hud-pipelines');
+            const errorsEl = document.getElementById('hud-errors');
+            const logsEl = document.getElementById('hud-logs');
+            if (!prefersReduced && (uptimeEl || pipelinesEl || errorsEl || logsEl)) {
+                let uptime = 99.9;
+                let errors = 0;
+                const pipelineStates = ['RUNNING', 'ACTIVE', 'OK'];
+                const logPool = [
+                    ['ok', '[OK] cache warmed'],
+                    ['ok', '[OK] metrics stream connected'],
+                    ['warn', '[WARN] high latency spike detected (p95)'],
+                    ['ok', '[OK] autoscaler stable'],
+                    ['err', '[ERROR 500] transient_server_error'],
+                    ['warn', '[WARN] retrying request...'],
+                    ['ok', '[OK] rollback not required'],
+                ];
+
+                window.setInterval(() => {
+                    uptime = Math.min(99.99, Math.max(98.8, uptime + (Math.random() - 0.45) * 0.06));
+                    if (uptimeEl) uptimeEl.textContent = `${uptime.toFixed(2)}%`;
+
+                    if (pipelinesEl) pipelinesEl.textContent = pipelineStates[Math.floor(Math.random() * pipelineStates.length)];
+
+                    // Rare error blip
+                    if (Math.random() < 0.08) errors = Math.min(2, errors + 1);
+                    else if (Math.random() < 0.35) errors = Math.max(0, errors - 1);
+                    if (errorsEl) errorsEl.textContent = String(errors);
+
+                    if (logsEl) {
+                        const [kind, msg] = logPool[Math.floor(Math.random() * logPool.length)];
+                        const line = document.createElement('div');
+                        line.className = 'hud-log';
+                        const stamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                        const tag = kind === 'ok' ? '<span class="ok">[OK]</span>' : kind === 'warn' ? '<span class="warn">[WARN]</span>' : '<span class="err">[ERROR]</span>';
+                        line.innerHTML = `<span class="hud-ts">[${stamp}]</span> ${tag} ${msg.replace(/^\[[A-Z0-9 ]+\]\s*/,'')}`;
+                        logsEl.prepend(line);
+                        // keep last 6
+                        while (logsEl.children.length > 6) logsEl.removeChild(logsEl.lastElementChild);
+                    }
+                }, 1800);
+            }
+
+            // Subtle parallax tilt for HUD shell
+            const hudShell = document.querySelector('.hud-shell');
+            if (hudShell && !prefersReduced) {
+                let raf = null;
+                let mx = 0, my = 0;
+                hudShell.addEventListener('mousemove', (e) => {
+                    const r = hudShell.getBoundingClientRect();
+                    mx = (e.clientX - r.left) / r.width - 0.5;
+                    my = (e.clientY - r.top) / r.height - 0.5;
+                    if (raf) return;
+                    raf = window.requestAnimationFrame(() => {
+                        hudShell.style.transform = `perspective(900px) rotateX(${(-my * 3).toFixed(2)}deg) rotateY(${(mx * 4).toFixed(2)}deg)`;
+                        raf = null;
+                    });
+                });
+                hudShell.addEventListener('mouseleave', () => {
+                    hudShell.style.transform = '';
+                });
+            }
+
+            // Loading screen
+            const loading = document.getElementById('loading-screen');
+            const bar = document.getElementById('loading-bar-fill');
+            if (loading && bar && !prefersReduced) {
+                let p = 0;
+                const step = () => {
+                    p = Math.min(100, p + (3 + Math.random() * 10));
+                    bar.style.width = `${p}%`;
+                    if (p >= 100) {
+                        loading.classList.add('is-done');
+                        window.setTimeout(() => loading.remove(), 450);
+                        return;
+                    }
+                    window.setTimeout(step, 120 + Math.random() * 180);
+                };
+                window.setTimeout(step, 180);
+            } else if (loading) {
+                loading.remove();
+            }
+
+            // Flip cards: click anywhere to open the project section
+            const flipCards = Array.from(document.querySelectorAll('.flip-card[data-href]'));
+            flipCards.forEach((card) => {
+                card.addEventListener('click', (e) => {
+                    const link = e.target.closest('a');
+                    if (link) return;
+                    const href = card.getAttribute('data-href');
+                    if (href) window.location.href = href;
+                });
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const href = card.getAttribute('data-href');
+                        if (href) window.location.href = href;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
