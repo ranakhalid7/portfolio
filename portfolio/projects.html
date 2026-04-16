@@ -385,111 +385,6 @@
                     </div>
                 </div>
 
-                <!-- Project 4: AI mind — Agentic RAG -->
-                <div class="row mb-5" id="project-aimind">
-                    <div class="col-12">
-                        <div class="card project-card">
-                            <div class="row g-0">
-                                <div class="col-lg-6">
-                                    <div class="project-images">
-                                        <div id="aimind-carousel" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="images/aimind-dashboard.png"
-                                                         class="d-block w-100" alt="AI mind — home and agent modes"
-                                                         style="height: 400px; object-fit: cover; object-position: top;">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="images/aimind-chat.png"
-                                                         class="d-block w-100" alt="AI mind — chat with RAG retrieval"
-                                                         style="height: 400px; object-fit: cover; object-position: top;">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#aimind-carousel" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon"></span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#aimind-carousel" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="card-body p-5">
-                                        <div class="d-flex align-items-center mb-3 flex-wrap gap-1">
-                                            <span class="badge bg-success me-2">Agentic RAG</span>
-                                            <span class="badge bg-primary">LLM Tools</span>
-                                            <span class="badge bg-secondary">Full Stack</span>
-                                        </div>
-                                        <h2 class="card-title mb-3">AI mind</h2>
-                                        <p class="text-white mb-2"><small>Web assistant with retrieval-augmented generation &amp; optional web search</small></p>
-                                        <p class="card-text lead mb-4">
-                                            A conversational web app where the user talks to a language model that <strong>decides when</strong> to query a <strong>private knowledge base</strong> or <strong>the open web</strong>. The agent loop (model → tool calls → model) is implemented with <strong>LangGraph</strong> and <strong>LangChain</strong> tool bindings; execution can be traced with <strong>LangSmith</strong> when enabled.
-                                        </p>
-
-                                        <div class="mb-4">
-                                            <h5>Architecture &amp; stack:</h5>
-                                            <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-circle text-success me-2"></i><strong>Frontend:</strong> Vue 3 + Vite (modern chat UI)</li>
-                                                <li><i class="bi bi-check-circle text-success me-2"></i><strong>Backend:</strong> Node.js + Express</li>
-                                                <li><i class="bi bi-check-circle text-success me-2"></i><strong>Agent:</strong> LangGraph cycle—LLM chooses tools, observes results, responds</li>
-                                                <li><i class="bi bi-check-circle text-success me-2"></i><strong>Knowledge store:</strong> Pinecone index with integrated embeddings</li>
-                                                <li><i class="bi bi-check-circle text-success me-2"></i><strong>Ingestion:</strong> script using <code class="text-info">upsertRecords</code> to load content</li>
-                                                <li><i class="bi bi-check-circle text-success me-2"></i><strong>Retrieval:</strong> <code class="text-info">searchRecords</code> with a text query (current Pinecone path—not legacy LangChain vector flows)</li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="mb-4">
-                                            <h5>Tools (agent):</h5>
-                                            <ul class="list-unstyled">
-                                                <li><i class="bi bi-database text-primary me-2"></i><code class="text-white">search_knowledge_base</code> — semantic search in Pinecone</li>
-                                                <li><i class="bi bi-globe text-primary me-2"></i><code class="text-white">search_web</code> — web search via SerpAPI (or Google Custom Search when keys are configured)</li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="mb-4">
-                                            <h6>Technologies:</h6>
-                                            <div class="tech-stack">
-                                                <span class="badge bg-primary me-2 mb-2">Vue 3</span>
-                                                <span class="badge bg-success me-2 mb-2">Vite</span>
-                                                <span class="badge bg-info text-white me-2 mb-2">Node.js</span>
-                                                <span class="badge bg-warning text-dark me-2 mb-2">Express</span>
-                                                <span class="badge bg-secondary me-2 mb-2">LangGraph</span>
-                                                <span class="badge bg-danger me-2 mb-2">LangChain</span>
-                                                <span class="badge bg-dark me-2 mb-2">Pinecone</span>
-                                                <span class="badge bg-light text-dark me-2 mb-2">LangSmith</span>
-                                                <span class="badge bg-primary me-2 mb-2">SerpAPI</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="project-stats mb-4">
-                                            <div class="row text-center">
-                                                <div class="col-4">
-                                                    <div class="stat-item">
-                                                        <h4 class="text-primary mb-1">RAG</h4>
-                                                        <small class="text-white">+ Web</small>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="stat-item">
-                                                        <h4 class="text-success mb-1">2</h4>
-                                                        <small class="text-white">Tools</small>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="stat-item">
-                                                        <h4 class="text-warning mb-1">2026</h4>
-                                                        <small class="text-white">Build</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -627,11 +522,7 @@
                     <div class="social-links">
                         <a href="mailto:lvrcil7@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
                         <a href="tel:+966558413188" aria-label="Phone"><i class="bi bi-phone"></i></a>
-                        <a href="https://www.linkedin.com/in/rana-alharbi-640079238" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                         <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="static/rana-khalid-alharbi-cv.pdf" download target="_blank" rel="noopener noreferrer" title="Download CV" aria-label="Download CV">
-                            <i class="bi bi-file-earmark-arrow-down"></i>
-                        </a>
                     </div>
                 </div>
             </div>
